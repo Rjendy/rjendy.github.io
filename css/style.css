@@ -1,0 +1,221 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*====================================
+Nav Bar
+===================================*/
+
+.nav {
+	background-color: #0916aa;	
+	height: 79px;	
+	display: block;
+	width: 99.6%;
+	border-width: 4px;  
+    border-style: solid;
+	border-color: #a2a5cc;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	
+}	
+
+.nav:hover {
+	background-color: #182adc;
+}
+
+.nav:hover a {
+	color: #d2e5ff;
+}
+
+.nav-item:hover {
+	font-size: 49px;
+}	
+
+.nav ul {
+	margin-top: 0;
+	list-style-type: none;
+	text-align: left;	
+}
+
+.nav ul li {
+	display: inline;
+}	
+
+.nav a {
+	text-decoration: none;
+	color: #a2a5cc;
+}	
+	
+.nav-title {
+	font-family: Vintage;	
+	font-variant: small-caps;
+	text-align: left;
+	font-size: 75px;
+	letter-spacing: 2pt;
+	padding-top: 0px;
+	padding-left: 12px;
+	padding-right: 710px;	
+	text-shadow: -8px 4px 8px rgba(0,0,0,.8);	
+}
+
+.nav-item {
+	display: inline;
+	padding-left: 35px;
+	font-family: courier new;
+	font-size: 40px;	
+	transition:font-size 1s;
+     -moz-transition:font-size 2s; /* Firefox 4 */
+     -webkit-transition:font-size 2s; /* Safari and Chrome */
+     -o-transition:font-size 2s;
+	
+}
+
+/*==========================================
+Background Photo
+==========================================*/
+#home {
+	background-image: url(../img/tech.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	"o"background-size: cover;
+	background-size: cover;
+	width: 100%;
+	display: block;
+	height: auto;
+	padding-top: 350px; 
+	padding-bottom: 500px; 
+}
+
+/*==========================================
+Content
+==========================================*/
+.container {  
+	height: 300px; /*this is not needed*/
+	position: relative;
+	width: 80%;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 0px auto;
+	background-color: #fff;
+	box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);	
+}
+
+.container-right {
+	right: 0;
+	position: absolute; /* not working */
+}
+
+.padding {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}	
+
+.content-id {
+	background-color: #d2e5ff; 
+	font-size: 65px;
+	font-family: Courier New, monospace;
+	font-weight: bold;
+	color: #0916aa; 
+	padding-top: 100px;	
+}
+
+/*==========================================
+Skills
+==========================================*/	
+	
+#skills {
+    overflow: hidden;  	
+	margin-left: 20px;
+}	
+
+#skills:after {
+    background-color: #0916aa;	
+    content: "";
+    display: inline-block;
+    height: 7px;
+    position: relative;
+    vertical-align: middle;
+    width: 84.9%;
+	overflow: hidden;
+}
+
+#skills:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/*==========================================
+Experience
+==========================================*/	
+
+#experience {
+    overflow: hidden;
+    text-align: center;
+	display: block;
+	padding-top: 20px;
+}
+
+#experience:before,
+#experience:after {
+    background-color: #0916aa;
+    content: "";
+    display: inline-block;
+    height: 7px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#experience:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+#experience:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/*==========================================
+Content
+==========================================*/
+
+#contact {
+    overflow: hidden;
+    text-align: right;
+	display: block;
+	margin-right: 20px;
+}
+
+#contact:before {
+    background-color: #0916aa;
+    content: "";
+    display: inline-block;
+    height: 7px;
+    position: relative;
+    vertical-align: middle;
+    width: 84.9%;
+}
+
+#contact:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+#contact:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/*===========================================
+Footer
+===========================================*/
+
+.footer {
+	text-align: right;
+	margin-right: 20px;
+	padding: 10px;
+}	
